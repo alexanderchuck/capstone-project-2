@@ -1,0 +1,119 @@
+#grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 85px;
+}
+
+.greeting {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0;
+    color: #4B8E8D;
+}
+
+.heading {
+    font-size: 30pt;
+}
+
+#graphic {
+    height: 500px;
+    width: 100%;
+}
+
+.heading {
+    margin-bottom: 5px;
+}
+
+.intro {
+    padding: 15px;
+    text-align: center;
+}
+
+.intro > h3 {
+    color: #4B8E8D;
+    font-size: 24pt;
+}
+
+.photo {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.skills {
+    display: grid;
+    grid-template-rows: .5fr 2fr 2fr 1fr;
+    width: 100%;
+    text-align: center;
+}
+
+.one {
+    font-size: 20pt;
+    color: #4B8E8D;
+}
+
+.two > h4 {
+    font-size: 18pt;
+    color: #4B8E8D;
+}
+
+.three > h4 {
+    font-size: 18pt;
+    color: #4B8E8D;
+}
+
+.button {
+    height: 35px;
+    border-radius: 7%;
+    background-color: #396362;
+    color: white;
+}
+
+.about {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.about > h3 {
+    font-size: 24pt;
+    color: #4B8E8D;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-items: center;
+    gap: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #F6C89F;
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.mondrian, .tindog, .dev-design {
+    border: solid #396362;
+    text-align: center;
+    font-size: 18pt;
+}
+
+@media (max-width: 992px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
